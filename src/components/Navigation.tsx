@@ -26,6 +26,7 @@ const Navigation = () => {
    { name: "Pricing", href: "/pricing" }
     //{ name: "Services", href: "/services" },
   ];
+  
 
   return (
     <header
