@@ -27,8 +27,29 @@ const features = [
     description: "Enterprise-level solutions designed to fit businesses of all sizes."
   }
 ];
+const aiStackFeatures = [
+  "AI-powered workflow automation",
+  "Custom API design & integration",
+  "LLM-powered data processing",
+  "Document understanding & extraction",
+  "AI-driven decision engines",
+  "Real-time analytics dashboards",
+  "Webhook & third-party integrations",
+  "Fine-tuned ChatGPT / DeepSeek models"
+];
+const omniBotFeatures = [
+  "AI chatbots for WhatsApp, Instagram & websites",
+  "Lead capture + instant qualification",
+  "24/7 automated customer support",
+  "Conversational sales funnels",
+  "Multi-language intelligent replies",
+  "E-commerce and payment workflows",
+  "Integrations with CRM, Google Sheets & APIs",
+  "ChatGPT/DeepSeek smart conversation engine"
+];
 
 const Index = () => {
+  
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
@@ -145,9 +166,149 @@ const Index = () => {
           </p>
         </motion.div>
 
+<section className="container px-4 py-20 section-gradient">
+  <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+    >
+      <div className="inline-block px-4 py-1.5 rounded-full glass mb-4">
+        <span className="text-sm font-medium flex items-center gap-2">
+          <Cpu className="w-4 h-4 text-blue-500" />
+          AI Full-Stack Development
+        </span>
+      </div>
+
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        Build Powerful AI-Driven Applications
+      </h2>
+
+      <p className="text-lg text-muted-foreground mb-6">
+        We help businesses integrate AI into their full workflow — from backend APIs 
+        to intelligent automation systems. Deliver smarter, faster operations with 
+        custom LLMs, robust APIs, and real-time AI decision engines.
+      </p>
+
+      <div className="space-y-4">
+        <h4 className="font-semibold">Benefits:</h4>
+        <ul className="space-y-2">
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-blue-500 shrink-0" />
+            Automate complex tasks end-to-end
+          </li>
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-blue-500 shrink-0" />
+            Build scalable and secure APIs
+          </li>
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-blue-500 shrink-0" />
+            Reduce manual work by 60-90%
+          </li>
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-blue-500 shrink-0" />
+            Get faster insights from your data
+          </li>
+        </ul>
+      </div>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="glass rounded-xl p-6"
+    >
+      <h4 className="font-semibold mb-4">Capabilities</h4>
+
+      <div className="grid grid-cols-1 gap-3">
+        {aiStackFeatures.map((feature, i) => (
+          <div key={i} className="flex items-center gap-3 p-3 rounded-lg bg-background/50">
+            <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+            <span className="text-sm">{feature}</span>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+
+  </div>
+</section>
+
+
+<section className="container px-4 py-20 section-gradient">
+  <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+    >
+      <div className="inline-block px-4 py-1.5 rounded-full glass mb-4">
+        <span className="text-sm font-medium flex items-center gap-2">
+          <Bot className="w-4 h-4 text-purple-500" />
+          Omnichannel AI Bots
+        </span>
+      </div>
+
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        Automate Conversations Across All Platforms
+      </h2>
+
+      <p className="text-lg text-muted-foreground mb-6">
+        Deliver seamless experiences on WhatsApp, Instagram, Facebook, websites 
+        and more. Our AI bots handle sales, support, bookings, and follow-ups — 
+        all automatically and intelligently.
+      </p>
+
+      <div className="space-y-4">
+        <h4 className="font-semibold">Benefits:</h4>
+        <ul className="space-y-2">
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-purple-500 shrink-0" />
+            Centralized automation for all platforms
+          </li>
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-purple-500 shrink-0" />
+            Increase sales & lead conversions
+          </li>
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-purple-500 shrink-0" />
+            Reduce support workload drastically
+          </li>
+          <li className="flex items-center gap-2 text-muted-foreground">
+            <CheckCircle className="w-5 h-5 text-purple-500 shrink-0" />
+            Unified bot for all channels
+          </li>
+        </ul>
+      </div>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="glass rounded-xl p-6"
+    >
+      <h4 className="font-semibold mb-4">Supported Platforms</h4>
+
+      <div className="grid grid-cols-1 gap-3">
+        {omniBotFeatures.map((feature, i) => (
+          <div key={i} className="flex items-center gap-3 p-3 rounded-lg bg-background/50">
+            <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+            <span className="text-sm">{feature}</span>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+
+  </div>
+</section>
+{/* 
+
         <div className="grid md:grid-cols-2 gap-6">
           {[
-            { icon: Bot, title: "AI Chatbots", desc: "Smart conversational AI that understands and assists customers" },
+            { icon: Bot, title: "AI Full-Stack Development & Intelligent API Automation", desc: "End-to-end AI workflows tailored for your business Real-time data processing & prediction engines \nCustom API orchestration for apps, CRMs, bots & dashboards\nFast deployment with scalable microservices\nEnterprise-grade performance & security" },
             { icon: MessageSquare, title: "WhatsApp & Telegram Bots", desc: "Automated messaging for sales, support, and engagement" },
             { icon: Zap, title: "Process Automation", desc: "Streamline workflows and eliminate repetitive tasks" },
             { icon: Users, title: "Customer Engagement", desc: "24/7 intelligent customer support and lead qualification" }
@@ -169,11 +330,11 @@ const Index = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="container px-4 py-20 section-gradient">
+      {/* <section className="container px-4 py-20 section-gradient">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -201,10 +362,10 @@ const Index = () => {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="container px-4 py-20">
+      {/* <section className="container px-4 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -235,7 +396,7 @@ const Index = () => {
             </Button>
           </div>
         </motion.div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

@@ -7,6 +7,7 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Pricing from "@/pages/pricing";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/pricing" element={<Pricing />} />
             </Routes>
           </BrowserRouter>
         </div>
