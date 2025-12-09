@@ -64,7 +64,7 @@ const Navigation = () => {
               className="button-gradient"
               asChild
             >
-              <Link to="/services">Get Started</Link>
+              <Link to="/login">Get Started</Link>
             </Button>
           </div>
 
@@ -97,7 +97,7 @@ const Navigation = () => {
                     className="button-gradient mt-4"
                     asChild
                   >
-                    <Link to="/services" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}>
                       Get Started
                     </Link>
                   </Button>

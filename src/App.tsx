@@ -8,7 +8,8 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Pricing from "@/pages/pricing";
-
+import Login from "@/pages/login";
+import Signup from "@/pages/signup";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -24,6 +25,8 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/pricing" element={<Pricing />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
             </Routes>
           </BrowserRouter>
         </div>
