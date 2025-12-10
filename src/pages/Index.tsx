@@ -110,13 +110,13 @@ const Index = () => {
             className="flex flex-col sm:flex-row gap-4 items-start"
           >
             <Button size="lg" className="button-gradient" asChild>
-              <Link to="/services">Get Started</Link>
+              <Link to="/login">Get Started</Link>
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full" asChild>
+            {/* <Button size="lg" variant="outline" className="rounded-full" asChild>
               <Link to="/about">
                 Book Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
 
