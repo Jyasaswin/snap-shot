@@ -21,8 +21,8 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Resources", href: "/resources" }
+    // { name: "Home", href: "/" },
+    { name: "AI in Action", href: "/resources" }
   ];
 
   const servicesMenu = [
