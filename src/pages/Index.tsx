@@ -5,6 +5,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import fullStackImg from "@/assets/full_stack_web_dev.png";
+import automationImg from "@/assets/automation_solutions.png";
+import aiPlatformsImg from "@/assets/ai_platforms.png";
+import chatbotsImg from "@/assets/chatbots_agents.png";
 
 const featureShowcase = [
   {
@@ -12,7 +16,7 @@ const featureShowcase = [
     description:
       "We build complete web applications covering frontend, backend, databases, APIs, auth, and deployment with modern architecture for performance, security, and scale.",
     detail: "Performance-first builds with CI/CD, observability, and clean code standards.",
-    image: "https://undraw.co/static/illustrations/undraw_website_27ju.svg",
+    image: fullStackImg,
     link: "https://developer.mozilla.org/en-US/docs/Web",
     cta: "Learn More"
   },
@@ -21,7 +25,7 @@ const featureShowcase = [
     description:
       "Automation systems that remove repetitive work and optimize workflows—data processing, background jobs, integrations, and scheduled tasks that boost efficiency and accuracy.",
     detail: "Webhook-driven flows, custom schedulers, and ops tooling tailored to your stack.",
-    image: "https://undraw.co/static/illustrations/undraw_automation_re_t0bk.svg",
+    image: automationImg,
     link: "https://www.selenium.dev",
     cta: "See Automations"
   },
@@ -30,7 +34,7 @@ const featureShowcase = [
     description:
       "Intelligent platforms with document processing, image analysis, smart search, recommendations, and assistants embedded seamlessly into full stack apps.",
     detail: "Retrieval, fine-tuning, guardrails, and human-in-the-loop baked into the UX.",
-    image: "https://undraw.co/static/illustrations/undraw_artificial_intelligence_re_enpp.svg",
+    image: aiPlatformsImg,
     link: "https://huggingface.co",
     cta: "Explore AI Builds"
   },
@@ -39,20 +43,20 @@ const featureShowcase = [
     description:
       "Custom bots from rule-based automation to advanced AI agents handling messaging, monitoring, data extraction, notifications, and intelligent interactions.",
     detail: "Multi-channel (web/WhatsApp/API), secure handoffs, analytics, and CRM integration.",
-    image: "https://undraw.co/static/illustrations/undraw_chatbot_re_h7a0.svg",
+    image: chatbotsImg,
     link: "https://platform.openai.com",
     cta: "View Bots"
   }
 ];
 
 const Index = () => {
-  
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      
+
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -62,7 +66,7 @@ const Index = () => {
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
         </div>
-        
+
         {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -74,7 +78,7 @@ const Index = () => {
             AI-Powered Business Solutions
           </span>
         </motion.div> */}
-        
+
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <motion.div
             initial={{ opacity: 0 }}
@@ -161,7 +165,7 @@ const Index = () => {
               </div>
             </div>
           </div> */}
-        </motion.div> 
+        </motion.div>
       </motion.section>
 
       {/* What We Do Section */}
@@ -186,9 +190,8 @@ const Index = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className={`flex flex-col lg:flex-row gap-10 items-center max-w-6xl mx-auto ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
+              className={`flex flex-col lg:flex-row gap-10 items-center max-w-6xl mx-auto ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                }`}
             >
               <div className="space-y-4 w-full lg:w-1/2">
                 <div className="inline-flex px-3 py-1 rounded-full glass text-sm font-semibold tracking-wide uppercase text-primary/90">
@@ -208,12 +211,16 @@ const Index = () => {
                 </Button>
               </div>
               <div className="w-full lg:w-1/2">
-                <div className="glass rounded-2xl overflow-hidden border border-border/60 bg-card">
+                <div className="relative flex items-center justify-center">
                   <div className="aspect-video w-full relative flex items-center justify-center">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="h-full w-full object-contain p-6 md:p-8"
+                      className="h-full w-full object-contain mix-blend-screen"
+                      style={{
+                        maskImage: "radial-gradient(circle at center, black 60%, transparent 100%)",
+                        WebkitMaskImage: "radial-gradient(circle at center, black 60%, transparent 100%)"
+                      }}
                       loading="lazy"
                     />
                   </div>
