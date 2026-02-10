@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/92dc0c12-c831-4ed8-9ab7-0f875920f45d
+**URL**: [https://lovable.dev/projects/92dc0c12-c831-4ed8-9ab7-0f875920f45d](https://aisolutions-eta.vercel.app/)
 
 ## How can I edit this code?
 
